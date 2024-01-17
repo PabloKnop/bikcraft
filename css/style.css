@@ -1,0 +1,23 @@
+@import url(global.css);
+
+.header-bg {
+  background-color: var(--c12);
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 96px;
+  place-content: space-between;
+  align-items: center;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+  font-size: 30px;
+  font-family: 'Poppins';
+}
