@@ -9,13 +9,6 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 600px) {
-  .botao {
-    padding: 12px 18px;
-    font-size: 16px;
-  }
-}
-
 .botao:hover {
   background-image: linear-gradient(to bottom, #ffbb00, #e4a30b);
 }

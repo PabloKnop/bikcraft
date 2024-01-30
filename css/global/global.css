@@ -12,3 +12,7 @@ img {
 a{
   text-decoration: none;
 }
+
+span {
+  color: var(--p1);
+}
