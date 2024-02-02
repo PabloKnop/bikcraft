@@ -1,16 +1,17 @@
 .bicicletas {
   padding: 60px 20px;
-
 }
 
 .bicicletas h1 {
-  max-width: 1200px;
+  max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  background-color: bisque;
   padding-bottom: 40px;
-  padding-left: 20px;
   box-sizing: border-box;
+}
+
+.bicicletas a {
+  display: block;
 }
 
 .bicicletas ul {
@@ -19,12 +20,21 @@
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  overflow-x: auto;
+}
+
+
+.bicicletas li{
+  min-width: 280px;
+}
+
+
+@media (max-width: 800px) {
+  .bicicletas ul {
+    gap: 20px; 
 }
 
 .bicicletas img {
-  border-radius: 5px;
   margin-bottom: 16px;
 }
 
