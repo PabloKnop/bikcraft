@@ -7,13 +7,9 @@
   place-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 1200px;
-  box-sizing: border-box;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
   gap: 16px;
   flex-wrap: wrap;
+  padding: 20px 0px;
 }
 
 .header-menu {
@@ -34,7 +30,6 @@
   .header-menu {
     gap: 20px;
   }
-
   .header-menu a {
     background-color: var(--c11);
     padding: 8px 16px;
