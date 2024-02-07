@@ -1,23 +1,38 @@
 .tecnologia-bg {
   background-color: var(--c11);
+  box-shadow: inset 0px 120px 0px white, inset 0px -120px 0px white;
 }
 
 .tecnologia {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  gap: 40px;
 }
 
-.tecnologia-conteudo {
-  display: grid;
-  gap: 0px 50px;
+.tecnologia h2 {
+  padding-bottom: 32px;
 }
-
+.tecnologia span {
+  padding-bottom: 20px;
+}
+.tecnologia p {
+  padding-bottom: 20px;
+}
 .tecnologia a {
+  place-self: start;
+  border-bottom: solid;
+  margin-bottom: 80px;
   text-transform: uppercase;
 }
-
-.caracteristicas {
+.tecnologia-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+.tecnologia-conteudo {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  place-content: center start;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }

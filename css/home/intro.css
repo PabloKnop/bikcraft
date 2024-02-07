@@ -10,24 +10,27 @@
   gap: 26px 40px;
 }
 
-.intro img {
+.intro-img img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .intro-conteudo {
   display: grid;
   place-content: end;
-  gap: 26px 0px;
   padding-bottom: 200px;
 }
 
 .intro-conteudo h1 {
   color: var(--c0);
+  margin-bottom: 32px;
 }
 
 .intro-conteudo p {
   color: var(--c5);
+  margin-bottom: 20px;
 }
 
 @media (max-width: 800px) {
