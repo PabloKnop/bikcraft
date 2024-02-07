@@ -1,6 +1,6 @@
 .tecnologia-bg {
   background-color: var(--c11);
-  box-shadow: inset 0px 120px 0px white, inset 0px -120px 0px white;
+  box-shadow: inset 0px 80px 0px white, inset 0px -80px 0px white;
 }
 
 .tecnologia {
