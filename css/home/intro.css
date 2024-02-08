@@ -41,6 +41,10 @@
     /* offset-x | offset-y | blur-radius | spread-radius | color */
   }
 
+  .intro-conteudo h1,p  {
+    margin-bottom: 0px;
+  }
+
   .intro {
     grid-template-columns: 1fr;
   }
