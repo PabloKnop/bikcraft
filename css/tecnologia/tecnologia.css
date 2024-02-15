@@ -20,11 +20,9 @@
   padding-bottom: 20px;
 }
 .tecnologia a {
-  place-self: start;
-  border-bottom: solid;
   margin-bottom: 80px;
-  text-transform: uppercase;
 }
+
 .tecnologia-img img {
   height: 100%;
   width: 100%;
@@ -35,7 +33,7 @@
   display: grid;
   place-content: center start;
   padding-top: 160px;
-  padding-bottom: 160px;
+  padding-bottom: 140px;
 }
 
 .caracteristicas-container {
@@ -56,6 +54,7 @@
 @media (max-width: 800px) {
   .tecnologia-bg {
     box-shadow: none;
+    margin-top: 0px;
   }
 
   .tecnologia {
@@ -68,7 +67,7 @@
 
   .tecnologia-conteudo {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
   .tecnologia a {
     margin-bottom: 60px;
