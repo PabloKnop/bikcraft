@@ -1,0 +1,21 @@
+.depoimento-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--p1);
+}
+
+.depoimento-container img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.depoimento-texto p {
+  align-self: end;
+  padding: 40px 40px 80px 80px;
+}
+
+.depoimento-texto span {
+  font: italic 900 2rem/1.3 "Merriweather", sans-serif;
+}
