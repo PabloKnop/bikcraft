@@ -23,10 +23,14 @@
 }
 
 .depoimento-texto p {
-  font: italic 900 2rem/1.3 "Merriweather", sans-serif;
+  font: italic 900 2rem/1.25 "Merriweather", sans-serif;
   max-width: 32ch;
   position: relative;
   padding-bottom: 32px;
+}
+
+.depoimento-texto span {
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
 }
 
 .depoimento-texto p::before {
@@ -36,7 +40,7 @@
   position: absolute;
   left: -50px;
   top: -20px;
-  display: inline-block;
+  color: var(--p2);
 }
 
 .depoimento-texto p::after {
@@ -44,10 +48,33 @@
   font-family: "Merriweather";
   position: absolute;
   font-size: 5rem;
+  color: var(--p2);
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
   .depoimento-container {
     grid-template-columns: 1fr;
   }
-} */
+
+  .img-container {
+    max-height: 200px;
+  }
+  .depoimento-texto {
+    text-align: center;
+    justify-self: center;
+    padding: 40px 20px 40px 20px;
+  }
+
+  .depoimento-texto p {
+    font: italic 900 1.5rem/1.3 "Merriweather", sans-serif;
+  }
+
+  .depoimento-container {
+    margin-top: 0px;
+  }
+
+  .depoimento-texto p::before {
+    left: -50px;
+    top: -25px;
+  }
+}

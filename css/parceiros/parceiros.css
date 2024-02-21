@@ -47,4 +47,8 @@
   .parceiros h2 {
     padding-bottom: 20px;
   }
+
+  .parceiros li {
+    padding: 20px;
+  }
 }
