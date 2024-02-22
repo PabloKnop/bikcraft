@@ -31,6 +31,15 @@
   background-image: linear-gradient(to bottom, hsl(50, 100%, 50%), #e4a30b);
 }
 
+.botao.secundario {
+  background: var(--c10);
+  color: var(--c4);
+}
+
+.botao.secundario:hover {
+  background: var(--c9);
+}
+
 .link {
   place-self: start;
   display: inline-block;
