@@ -25,3 +25,6 @@
 
 /* Seguros */
 @import url(./seguros/seguros.css);
+
+/* Footer */
+@import url(./footer/footer.css);

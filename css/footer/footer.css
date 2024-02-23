@@ -1,0 +1,51 @@
+.footer-bg {
+  background-color: var(--c12);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 60px;
+}
+
+.info,
+.contato {
+  gap: 32px;
+  display: grid;
+  justify-self: start;
+}
+
+.info ul,
+.contato ul {
+  display: grid;
+  gap: 10px;
+}
+
+.info a,
+.contato a {
+  color: var(--c6);
+}
+
+.info a {
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.info a:hover,
+.contato a:hover {
+  color: white;
+}
+
+.footer-container p {
+  padding-top: 80px;
+  padding-bottom: 32px;
+  grid-column: -1/1;
+}
+
+.contato li:nth-child(2),
+.contato li:nth-child(4) {
+  border-bottom: 2px solid var(--c2);
+}
+
+.info {
+  justify-self: start;
+}

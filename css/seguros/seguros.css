@@ -7,10 +7,14 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   align-items: center;
+  padding-bottom: 60px;
+}
+.seguro-container h2 {
+  padding-top: 60px;
 }
 
 .seguro {
-  padding: 32px 32px 32px 64px;
+  padding: 32px 32px 32px 60px;
   display: grid;
   grid-template-columns: 1fr auto;
   background-color: var(--c12);
@@ -36,6 +40,10 @@
   position: relative;
 }
 
+.seguro li:nth-last-child(1) {
+  padding-bottom: 30px;
+}
+
 .seguro li::before {
   position: absolute;
   content: "";
@@ -51,4 +59,10 @@
 
 .seguro-container h2 {
   grid-column: -1/1;
+}
+
+@media (max-width: 800px) {
+  .seguro-container {
+    grid-template-columns: 1fr;
+  }
 }
