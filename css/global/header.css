@@ -43,13 +43,17 @@
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 600px) {
   .header-menu {
     gap: 12px;
   }
 
   .header-menu a {
     padding: 8px 12px;
+  }
+
+  .header-menu a {
+    font: 400 0.9rem/1.35 "Poppins", sans-serif;
   }
 }
 

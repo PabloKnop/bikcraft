@@ -4,21 +4,32 @@
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 3fr 5fr 4fr;
   padding-top: 60px;
 }
 
 .info,
 .contato {
-  gap: 32px;
   display: grid;
-  justify-self: start;
+  align-self: start;
 }
 
-.info ul,
-.contato ul {
-  display: grid;
-  gap: 10px;
+.info {
+  justify-self: center;
+}
+.info h3,
+.contato h3 {
+  padding-bottom: 32px;
+}
+
+.info li {
+  padding-bottom: 16px;
+}
+
+.rede-social {
+  display: flex;
+  gap: 20px;
+  padding-top: 24px;
 }
 
 .info a,
@@ -44,8 +55,18 @@
 .contato li:nth-child(2),
 .contato li:nth-child(4) {
   border-bottom: 2px solid var(--c2);
+  padding-bottom: 16px;
 }
 
-.info {
-  justify-self: start;
+.contato li:nth-child(3) {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.contato li:nth-child(1) {
+  padding-bottom: 16px;
+}
+
+.footer-container img {
+  object-fit: cover;
 }
