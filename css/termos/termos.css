@@ -1,0 +1,16 @@
+.termos {
+  padding: 80px 20px;
+}
+
+.termos p {
+  max-width: 74ch;
+  padding-top: 20px;
+}
+
+.termos h2:nth-child(5) {
+  padding-top: 48px;
+}
+
+.termos h2:nth-child(7) {
+  padding-top: 48px;
+}

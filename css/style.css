@@ -5,26 +5,19 @@
 @import url(./utilidades/tipografia.css);
 @import url(./utilidades/cores.css);
 
-/* Header */
-@import url(./global/header.css);
-
 /* Home */
+@import url(./home/header.css);
 @import url(./home/intro.css);
+@import url(./home/tecnologia.css);
+@import url(./home/parceiros.css);
+@import url(./home/depoimento.css);
+@import url(./home/footer.css);
 
 /* Bicicletas */
 @import url(./bicicletas/bicicletas-lista.css);
 
-/* Tecnologia */
-@import url(./tecnologia/tecnologia.css);
-
-/* Parceiros */
-@import url(./parceiros/parceiros.css);
-
-/* Depoimento */
-@import url(./depoimento/depoimento.css);
-
 /* Seguros */
 @import url(./seguros/seguros.css);
 
-/* Footer */
-@import url(./footer/footer.css);
+/* Termos */
+@import url(./termos/termos.css);

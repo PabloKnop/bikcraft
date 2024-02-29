@@ -6,10 +6,15 @@
   display: grid;
   grid-template-columns: 3fr 5fr 4fr;
   padding-top: 60px;
-  gap: 45px;
+  padding-bottom: 60px;
+  gap: 40px;
 }
 
 .footer-container h3 {
+  margin-bottom: 32px;
+}
+
+.footer-contato ul {
   margin-bottom: 32px;
 }
 
@@ -20,10 +25,14 @@
 .footer-container a {
   color: var(--c6);
 }
+
+.footer-container a:hover {
+  color: var(--c0);
+}
+
 .footer-rede-social {
   display: flex;
   gap: 32px;
-  padding-top: 16px;
 }
 
 .footer-contato li:nth-child(even):after {
@@ -35,7 +44,28 @@
   margin-top: 16px;
 }
 
-.footer-container p {
+.footer-copy {
   grid-column: -1/1;
-  padding-bottom: 64px;
+  margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footer-copy {
+    margin-top: 0px;
+  }
 }
