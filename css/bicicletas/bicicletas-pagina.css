@@ -1,0 +1,16 @@
+.bicicletas-pagina {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+
+.bicicletas-pagina-conteudo {
+  display: grid;
+  grid-column: 2;
+}
+
+.bicicletas-pagina-conteudo li {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}

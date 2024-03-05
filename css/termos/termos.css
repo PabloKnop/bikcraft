@@ -3,14 +3,15 @@
 }
 
 .termos p {
-  max-width: 74ch;
-  padding-top: 20px;
+  max-width: 75ch;
+  margin-bottom: 24px;
 }
 
-.termos h2:nth-child(5) {
-  padding-top: 48px;
+.termos h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.termos h2:nth-child(7) {
-  padding-top: 48px;
+.termos p + h2 {
+  margin-top: 40px;
 }
