@@ -2,15 +2,77 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .bicicletas-pagina-conteudo {
   display: grid;
   grid-column: 2;
+  grid-template-columns: 1fr 1fr;
+  align-self: start;
 }
 
 .bicicletas-pagina-conteudo li {
   display: flex;
   gap: 5px;
   align-items: center;
+  padding-bottom: 16px;
+}
+
+.bicicletas-pagina-conteudo li:last-child {
+  padding-bottom: 0px;
+}
+
+.bicicletas-pagina-conteudo li img {
+  width: 25px;
+}
+
+.bicicletas-pagina-conteudo h2 {
+  grid-column: -1/1;
+  padding-bottom: 20px;
+}
+
+.bicicletas-pagina-conteudo h2::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bicicletas-pagina-conteudo p {
+  padding-bottom: 32px;
+  grid-column: -1/1;
+}
+
+.bicicletas-pagina-conteudo a {
+  place-self: end;
+}
+
+.bicicletas-pagina-img {
+  position: relative;
+}
+
+.bicicletas-pagina-img::after {
+  content: "R$ 4999";
+  width: 90px;
+  height: 40px;
+  color: white;
+  position: absolute;
+  background-color: black;
+  display: flex;
+  top: 20px;
+  right: 0px;
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-sizing: border-box;
+  padding: 8px 8px 8px 8px;
+}
+
+.bicicletas-pagina-bg {
+  background-color: bisque;
+  box-shadow: inset 550px 0px 0px white;
 }
