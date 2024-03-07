@@ -50,27 +50,28 @@
 .bicicletas-pagina-conteudo a {
   place-self: end;
 }
-
 .bicicletas-pagina-img {
+  display: grid;
+  grid-area: -1/1;
+}
+
+.bicicletas-pagina-img span {
+  background-color: black;
+  grid-area: -1/1;
+}
+
+/*.bicicletas-pagina-img {
   position: relative;
 }
 
-.bicicletas-pagina-img::after {
-  content: "R$ 4999";
-  width: 90px;
-  height: 40px;
-  color: white;
+.bicicletas-pagina-img span {
   position: absolute;
   background-color: black;
-  display: flex;
   top: 20px;
   right: 0px;
-  font: 500 1.125rem/1.35 "Roboto", sans-serif;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  box-sizing: border-box;
-  padding: 8px 8px 8px 8px;
-}
+  display: block;
+  padding: 8px 16px 8px 8px;
+}*/
 
 .bicicletas-pagina-bg {
   background-color: bisque;
