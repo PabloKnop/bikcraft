@@ -50,6 +50,11 @@
   .font-1-xxl {
     font-size: 3rem;
   }
+
+  .font-1-xl {
+    font-size: 1.5rem;
+  }
+
   .font-2-l,
   .font-2-l-b {
     font-size: 1.125rem;
