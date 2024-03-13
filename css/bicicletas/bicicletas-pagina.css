@@ -65,7 +65,7 @@
 }
 
 .bicicletas-pagina-bg {
-  background-image: linear-gradient(to right, white 30%, blue 0%);
+  background-image: linear-gradient(to right, var(--c0) 30%, var(--c11) 0%);
 }
 
 @media (max-width: 800px) {
