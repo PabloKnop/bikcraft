@@ -1,0 +1,16 @@
+.perguntas-conteudo {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.perguntas-conteudo h1 {
+  padding-bottom: 88px;
+}
+
+.perguntas-conteudo div:nth-child(even) {
+  background-color: var(--c1);
+}
+
+.perguntas-conteudo dl {
+  max-width: 84ch;
+}

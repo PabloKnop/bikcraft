@@ -52,6 +52,7 @@
 .botao.seta {
   display: flex;
   align-items: center;
+  text-wrap: nowrap;
 }
 .botao.seta::after {
   content: "";
@@ -60,11 +61,11 @@
   height: 10px;
   margin-left: 16px;
   background: url("../../imagens/icones/seta.svg");
+  transition: transform 0.5s;
 }
 
 .botao.seta:hover::after {
   transform: translateX(4px);
-  transition: 0.5s;
 }
 
 .link {
@@ -89,6 +90,14 @@
 
 @media (max-width: 550px) {
   .botao {
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 600px) {
+  .botao.seta {
     padding: 12px 18px;
     font-size: 1rem;
     font-weight: 600;

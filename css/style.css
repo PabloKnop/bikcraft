@@ -17,8 +17,10 @@
 @import url(./bicicletas/bicicletas-lista.css);
 @import url(./bicicletas/bicicletas-pagina.css);
 
-/* Seguros */
+/* Seguros, Vantagens, Perguntas */
 @import url(./seguros/seguros.css);
+@import url(./seguros/vantagens.css);
+@import url(./seguros/perguntas.css);
 
 /* Termos */
 @import url(./termos/termos.css);
