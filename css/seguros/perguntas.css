@@ -4,13 +4,59 @@
 }
 
 .perguntas-conteudo h1 {
-  padding-bottom: 88px;
+  padding-bottom: 60px;
 }
 
-.perguntas-conteudo div:nth-child(even) {
+.perguntas-conteudo dl:nth-child(odd) {
   background-color: var(--c1);
+  border-radius: 5px;
 }
 
 .perguntas-conteudo dl {
-  max-width: 84ch;
+  padding: 20px 20px 20px 40px;
+}
+
+.perguntas-conteudo dt{
+  padding-top: 16px;
+  max-width: 80ch;
+}
+
+
+.perguntas-conteudo dd{
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.perguntas-conteudo dd::after{
+  content: "";
+  width:  14px;
+  height: 6px;
+  background-image: url(../../imagens/icones/seta-abrir.svg);
+  align-self: center;
+  transition: 0.3s;
+}
+
+.perguntas-conteudo dd:hover::after{
+  transform: rotate(180deg);
+}
+
+.perguntas-conteudo dd::before{
+  top: 7px;
+  left: -18px;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+}
+
+
+@media (max-width: 800px) {
+  .perguntas-conteudo {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
 }
