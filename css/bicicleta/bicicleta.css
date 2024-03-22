@@ -1,0 +1,34 @@
+.bicicleta{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.bicicleta-imagem{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: start;
+  gap: 20px 20px;
+}
+
+.bicicleta-imagem img{
+  background-size: cover;
+}
+
+.bicicleta-imagem img:first-child{
+  grid-column: -1/1;
+}
+
+.bicicleta-conteudo{
+  display: grid;
+}
+.bicicleta-comprar{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.bicicleta-comprar span{
+  display: flex;
+  place-self: start;
+}
