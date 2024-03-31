@@ -32,7 +32,7 @@
   }
   .header-menu a {
     background-color: var(--c11);
-    padding: 8px 16px;
+    padding: 12px 16px;
     border-radius: 5px;
   }
   .header-menu a:hover {

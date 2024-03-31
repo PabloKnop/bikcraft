@@ -7,7 +7,7 @@
 .intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 26px 40px;
+  gap: 0px 40px;
 }
 
 .intro-img img {
@@ -47,6 +47,7 @@
 
   .intro {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .intro-conteudo {

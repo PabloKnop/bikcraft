@@ -13,6 +13,9 @@
 
 .bicicletas ul {
   display: flex;
+  max-width: 1400px;
+  padding: 0px 20px 0px 20px;
+  margin: 0 auto;
   gap: 40px;
   overflow-y: auto;
 }
@@ -38,7 +41,6 @@
 .bicicletas h3 {
   display: flex;
   place-items: center;
-  margin-bottom: 8px;
 }
 
 .bicicletas p {
