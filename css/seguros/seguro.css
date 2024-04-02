@@ -1,7 +1,7 @@
 .seguro-bg {
+  margin-top: 80px;
   background-color: var(--c11);
-  box-shadow: inset 0px 100px 0px var(--c0), inset 0px -100px 0px var(--c12);
-
+  box-shadow: inset 0px 120px 0px var(--c0), inset 0px -120px 0px var(--c12);
 }
 
 .seguro-container{
@@ -17,17 +17,39 @@
 }
 
 .seguro{
-  place-content: center start;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 180px;
+  padding-bottom: 180px;
 }
 
 .seguro h2 {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 
 }
 
 .seguro p{
-  padding-bottom: 20px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 800px){
+  .seguro-container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 40px;
+    padding-top: 40px;
+  }
+
+  .seguro{
+    grid-area: 1;
+    padding: 0px;
+  }
+
+  .seguro-bg {
+    margin-top: 20px;
+    background-color: var(--c11);
+    box-shadow: inset 0px -60px 0px var(--c12)
+  }
+
 
 }
