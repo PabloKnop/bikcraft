@@ -1,0 +1,33 @@
+.seguro-bg {
+  background-color: var(--c11);
+  box-shadow: inset 0px 100px 0px var(--c0), inset 0px -100px 0px var(--c12);
+
+}
+
+.seguro-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.seguro-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.seguro{
+  place-content: center start;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.seguro h2 {
+  padding-bottom: 32px;
+
+}
+
+.seguro p{
+  padding-bottom: 20px;
+
+}
