@@ -1,17 +1,21 @@
-.bicicletas {
+.bicicletas,
+.bicicleta1 {
   padding-top: 60px;
   padding-bottom: 120px;
 }
 
-.bicicletas h2 {
+.bicicletas h2,
+.bicicleta1 h2 {
   padding-bottom: 40px;
 }
 
-.bicicletas img {
+.bicicletas img,
+.bicicleta1 img {
   margin-bottom: 16px;
 }
 
-.bicicletas a {
+.bicicletas a,
+.bicicleta1 a {
   display: block;
 }
 
@@ -24,24 +28,37 @@
   max-width: 1400px;
 }
 
-.bicicletas li {
+.bicicleta1 ul {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  gap: 40px;
+  overflow-y: auto;
+}
+
+.bicicletas li,
+.bicicleta1 li {
   min-width: 280px;
   flex: 1;
 }
-.bicicletas p {
+.bicicletas p,
+.bicicleta1 p {
   padding-left: 20px;
 }
 
-.bicicletas h3 {
+.bicicletas h3,
+.bicicleta1 h3 {
   display: flex;
   place-items: center;
 }
 
-.bicicletas a:hover h3::before{
+.bicicletas a:hover h3::before,
+.bicicleta1 a:hover h3::before {
   width: 24px;
 }
 
-.bicicletas h3::before{
+.bicicletas h3::before,
+.bicicleta1 h3::before {
   content: "";
   width: 12px;
   height: 8px;
@@ -50,12 +67,14 @@
   transition: 0.2s;
 }
 
-.bicicletas h3:hover::before{
+.bicicletas h3:hover::before,
+.bicicleta1 h3:hover::before {
   width: 24px;
 }
 
 @media (max-width: 800px) {
-  .bicicletas ul {
+  .bicicletas ul,
+  .bicicleta1 ul {
     gap: 20px;
   }
 }
