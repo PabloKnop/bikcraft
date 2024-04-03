@@ -108,14 +108,6 @@
   border: none;
 }
 
-.bicicletas ul {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow-y: auto;
-  padding: 0;
-}
-
 @media (max-width:950px){
   .bicicleta-imagem {
     grid-template-columns: 1fr;
@@ -151,5 +143,5 @@
   .bicicleta-imagem img:first-child {
     grid-column: -1/1;
   }
-  
 }
+
