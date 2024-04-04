@@ -4,6 +4,10 @@
   gap: 40px;
 }
 
+.bicicleta1{
+  padding-bottom: 60px;
+}
+
 .bicicleta-imagem {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

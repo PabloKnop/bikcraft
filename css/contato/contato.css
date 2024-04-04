@@ -1,0 +1,33 @@
+
+.contato-bg{
+
+}
+
+.contato-conteudo{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.contato-loja {
+  display: grid;
+  background: var(--c12);
+  padding: 60px;
+  gap: 32px;
+}
+
+.contato-loja ul{
+  display: grid;
+  gap: 8px;
+  grid-template-columns: auto 1fr;
+}
+.contato-loja li{
+  grid-column: 2;
+}
+
+.contato-loja img{
+place-self: center start;
+}
+
+.contato-cadastro{
+
+}

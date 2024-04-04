@@ -67,8 +67,7 @@
   transition: 0.2s;
 }
 
-.bicicletas h3:hover::before,
-.bicicleta1 h3:hover::before {
+.bicicletas h3:hover::before{
   width: 24px;
 }
 
