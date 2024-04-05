@@ -1,16 +1,25 @@
 .contato-bg {
+  background-color: var(--c11);
+  box-shadow: inset 0px -280px 0px var(--c1);
+}
+
+html{
+  background-color: var(--c1);
 }
 
 .contato-conteudo {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 3fr 4fr;
 }
 
 .contato-loja {
   display: grid;
   background: var(--c12);
-  padding: 60px;
+  padding: 48px 64px 48px 64px;
   gap: 32px;
+  align-content: start;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .contato-loja h2 {
@@ -26,6 +35,9 @@
   grid-column: 2;
 }
 
+.contato-loja a:hover{
+  color: var(--c0);
+}
 .contato-loja img {
   place-self: center start;
 }
@@ -40,38 +52,44 @@
 .contato-cadastro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 60px;
-  gap: 32px;
+  padding: 48px 64px 48px 64px;
+  gap: 20px;
   justify-content: start;
   align-content: start;
+  background-color: var(--c0);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .contato-cadastro label {
   display: block;
   width: 100%;
+  padding-bottom: 4px;
 }
 
 .contato-cadastro input {
   width: 100%;
-  height: 42px;
+  height: 48px;
   padding: 8px;
   box-sizing: border-box;
+  background-color: var(--c1);
+  border-radius: 5px;
+  border: 1px solid var(--c2); 
+  outline-color: aqua;
+  
 }
 
-.email {
-  grid-column: -1/1;
-}
 
-.mensagem {
-  grid-column: -1/1;
-}
-
-.mensagem {
+.email, .mensagem {
   grid-column: -1/1;
 }
 
 .mensagem textarea {
   width: 100%;
+  background-color: var(--c1);
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid var(--c2);
 }
 
 .contato-cadastro a {
