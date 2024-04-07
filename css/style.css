@@ -4,6 +4,7 @@
 @import url(./utilidades/componentes.css);
 @import url(./utilidades/tipografia.css);
 @import url(./utilidades/cores.css);
+@import url(./utilidades/formulario.css);
 
 /* Home */
 @import url(./home/header.css);
@@ -29,3 +30,4 @@
 
 /* Contato */
 @import url(./contato/contato.css);
+@import url(./contato/lojas.css);

@@ -112,3 +112,12 @@
 .titulo-container p {
   margin-bottom: 4px;
 }
+
+
+@media (max-width: 800px) {
+  .titulo-container p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}
