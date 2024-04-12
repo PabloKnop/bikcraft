@@ -1,0 +1,8 @@
+#orcamento{
+  background: linear-gradient(var(--c11) 600px, var(--c1) 0px)
+}
+
+.orcamento{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
