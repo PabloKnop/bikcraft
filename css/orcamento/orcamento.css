@@ -4,5 +4,49 @@
 
 .orcamento{
   display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.orcamento h2{
+  grid-column: 1/-1;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.orcamento div + h2{
+  padding-top: 20px;
+}
+
+.orcamento h2::before{
+  content: "";
+  width: 4px;
+  height: 8px;
+  position: absolute;
+  background-color: var(--p1);
+  left: -12px;   
+  bottom: 5px;
+}
+
+.orcamento-dados{
+  background-color: var(--c0);
+  border-radius: 0px 5px 5px 0px;
+  display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.orcamento-dados :nth-child(4),
+.orcamento-dados :nth-child(5),
+.orcamento-dados :last-child{
+  grid-column: 1/-1;
+}
+
+
+.orcamento-produto{
+  background-color: var(--c12);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.orcamento-produto, .orcamento-dados {
+  padding: 60px;
 }

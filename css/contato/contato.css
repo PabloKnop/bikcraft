@@ -118,7 +118,8 @@
 .form input[type="email"],
 .form textarea,
 .form input[type="tel"],
-.form input[type="number"]{
+.form input[type="number"],
+.form select{  
 background-color: var(--c1);
 width: 100%;
 border: 1px solid var(--c2);
@@ -134,7 +135,8 @@ font: 400 1rem/1.5 "Poppins", sans-serif;
 .form input[type="text"],
 .form input[type="email"],
 .form input[type="tel"],
-.form input[type="number"]{
+.form input[type="number"],
+.form select{
 height: 48px;
 }
 
@@ -143,7 +145,8 @@ height: 48px;
 .form input[type="email"]:focus,
 .form textarea:focus,
 .form input[type="tel"]:focus,
-.form input[type="number"]:focus{
+.form input[type="number"]:focus,
+.form select:focus{
   outline: 1px solid var(--p1);
   box-shadow: 0px 0px 5px 0px #fea;
   background-color: var(--c0);
