@@ -7,13 +7,17 @@
   grid-template-columns: 5fr 7fr;
 }
 
-.orcamento h2{
+.orcamento-dados h2{
   grid-column: 1/-1;
   text-transform: uppercase;
+}
+
+.orcamento h2{
   position: relative;
 }
 
-.orcamento div + h2{
+
+.orcamento-dados div + h2{
   padding-top: 20px;
 }
 
@@ -41,12 +45,39 @@
   grid-column: 1/-1;
 }
 
+.orcamento-produto, .orcamento-dados {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgb(0, 0, 0, .1); 
+}
 
 .orcamento-produto{
   background-color: var(--c12);
   border-radius: 5px 0px 0px 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
 }
 
-.orcamento-produto, .orcamento-dados {
-  padding: 60px;
+.orcamento-produto > *{
+  grid-column: 1/-1;
+}
+
+.orcamento-produto > label{
+  grid-column: initial;
+}
+
+.orcamento-produto label{
+  color: var(--c4);
+  background-color: var(--c10);
+  font: 400 1rem / 1.5 "Poppins", sans-serif;
+  display: block;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+
+#bikcraft:checked ~ #orcamento-bikcraft,
+#seguro:checked ~ #orcamento-seguro{
+  background-color: blue;
 }
