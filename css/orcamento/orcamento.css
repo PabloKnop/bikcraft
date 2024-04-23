@@ -7,19 +7,11 @@
   grid-template-columns: 5fr 7fr;
 }
 
-.orcamento-dados h2{
-  grid-column: 1/-1;
-  text-transform: uppercase;
-}
 
 .orcamento h2{
   position: relative;
 }
 
-
-.orcamento-dados div + h2{
-  padding-top: 20px;
-}
 
 .orcamento h2::before{
   content: "";
@@ -31,12 +23,23 @@
   bottom: 5px;
 }
 
+
+
+.orcamento-dados h2{
+  grid-column: 1/-1;
+  text-transform: uppercase;
+}
+
 .orcamento-dados{
   background-color: var(--c0);
   border-radius: 0px 5px 5px 0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+
+.orcamento-dados div + h2{
+  padding-top: 20px;
 }
 
 .orcamento-dados :nth-child(4),
@@ -55,15 +58,15 @@
   border-radius: 5px 0px 0px 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-content: start;
   gap: 20px;
+  align-content: start;
 }
 
 .orcamento-produto > *{
   grid-column: 1/-1;
 }
 
-.orcamento-produto > label{
+.orcamento-produto label{
   grid-column: initial;
 }
 
@@ -72,8 +75,43 @@
   background-color: var(--c10);
   font: 400 1rem / 1.5 "Poppins", sans-serif;
   display: block;
-  padding: 12px 16px;
+  padding: 12px 18px;
   border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.orcamento-produto input:checked + label{
+  background-color: var(--c0);
+  color: var(--c12);
+  outline: 2px solid var(--p1);
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.orcamento-produto label::before{
+ content: "";
+ width: 12px;
+ height: 12px;
+ border: 1px solid var(--c6);
+ box-sizing: border-box;
+ border-radius: 50%;
+ display: inline-block;
+ margin-right: 8px;
+}
+
+.orcamento-produto input:checked + label::before{
+  border-color: var(--c7);
+  box-shadow: inset 0 0 0 3px var(--c0), inset 0 0 0 6px var(--c7);
+ }
+
+
+.orcamento-produto input{
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
 }
 
 
