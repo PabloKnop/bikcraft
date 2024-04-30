@@ -5,6 +5,7 @@
 .orcamento {
   display: grid;
   grid-template-columns: 5fr 7fr;
+  margin-bottom: 120px;
 }
 
 .orcamento h2 {
@@ -82,6 +83,7 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
+  border: 1px solid black;
 }
 
 .orcamento-produto label::before {
@@ -159,4 +161,20 @@
   background-color: var(--c0);
   padding: 20px;
   border-radius: 5px;
+}
+
+
+@media (max-width: 1200px) {
+  .orcamento-produto,
+  .orcamento-dados {
+    padding: 32px 32px;  
+}
+}
+
+
+@media (max-width: 800px) {
+ .orcamento,
+ .orcamento-dados{
+  grid-template-columns: 1fr;
+ }
 }
