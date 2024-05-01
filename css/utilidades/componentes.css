@@ -22,6 +22,17 @@
   margin-right: auto;
   padding: 60px 20px;
   box-sizing: border-box;
+  position: relative;
+}
+
+.titulo-container::after {
+  position: absolute;
+  content: "";
+  width: 52px;
+  height: 52px;
+  background-image: url(../../imagens/dec/top-right.svg);
+  right: 20px;
+  top: 60px;
 }
 
 .botao {
@@ -36,6 +47,7 @@
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   cursor: pointer;
   border: none;
+  z-index: 1;
 }
 
 .botao:hover {

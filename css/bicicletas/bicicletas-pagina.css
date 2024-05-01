@@ -4,6 +4,17 @@
   gap: 0px 40px;
   padding-top: 60px;
   padding-bottom: 60px;
+  position: relative;
+}
+
+.bicicletas-pagina::after {
+  position: absolute;
+  content: "";
+  width: 52px;
+  height: 52px;
+  background-image: url(../../imagens/dec/top-right.svg);
+  right: 20px;
+  top: 40px;
 }
 
 .bicicletas-pagina-conteudo {
@@ -79,6 +90,10 @@
   .bicicletas-pagina-conteudo {
     grid-column: 1;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .bicicletas-pagina::after {
+    display: none;
   }
 }
 

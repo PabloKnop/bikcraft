@@ -2,6 +2,18 @@
   background-color: var(--c12);
   box-shadow: inset 0px -120px 0px var(--c0);
   /* offset-x | offset-y | blur-radius | spread-radius | color */
+  position: relative;
+}
+
+.intro-bg::after {
+  position: absolute;
+  content: "";
+  width: 52px;
+  height: 52px;
+  background-image: url(../../imagens/dec/bottom-left.svg);
+  bottom: 160px;
+  left: 20px;
+  z-index: 0;
 }
 
 .intro {
@@ -57,5 +69,9 @@
   .intro img {
     width: 100%;
     height: 300px;
+  }
+
+  .intro-bg::after {
+    display: none;
   }
 }
